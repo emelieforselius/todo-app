@@ -59,12 +59,12 @@
 .ul {
     list-style-type: none;
     padding: 20px;
+    margin-top: 40px;
 }
 
 .li {
     margin: 10px 0;
     padding: 10px;
-    border-radius: 4px;
     display: flex;
     justify-content: space-between;
 }
@@ -78,7 +78,3 @@
     left: 20px;
 
 }
-
-/* .backLink:hover {
-    text-decoration: underline;
-} */
