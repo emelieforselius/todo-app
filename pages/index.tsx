@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const LandingPage = () => {
   const links = [{ href: "/todo" }];
@@ -14,6 +15,12 @@ const LandingPage = () => {
         Wanna get started? Click <Link href="/todo">here</Link> to add your
         tasks :)
       </p>
+      <Image
+        src="/website-launch-checklist.svg"
+        alt="Website launch checklist"
+        width={400}
+        height={400}
+      ></Image>
     </div>
   );
 };
