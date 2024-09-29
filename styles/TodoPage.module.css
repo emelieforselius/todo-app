@@ -1,0 +1,70 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    margin: 50px 50px;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.inputField {
+    padding: 10px;
+    border: 1px solid var(--foreground);
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    height: 40px;
+    margin: 0 0 10px 20px;
+}
+
+.inputField::placeholder {
+    font-family: 'Roboto Serif', serif;
+}
+
+.addTodoButton {
+    margin: 0 20px 0 10px;
+    background-color: rgb(159, 105, 198);
+    font-family: 'Roboto Serif', serif;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.addTodoButton:hover {
+    background-color: rgb(128, 75, 165);
+}
+
+.deleteButton {
+    margin-left: 10px;
+    background-color: rgb(210, 93, 137);
+    font-family: 'Roboto Serif', serif;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButton:hover{
+    background-color: rgb(193, 75, 121);
+}
+
+.ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}

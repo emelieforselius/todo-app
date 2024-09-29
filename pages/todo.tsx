@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../styles/TodoPage.module.css"
 
 type Todo = {
   id: number;
@@ -22,20 +23,23 @@ const TodoPage = () => {
   };
 
   return (
-    <div>
-      <h1>Todo's</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Todo's</h1>
+      <div className={styles.inputContainer}>
       <input
         type="text"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Add a new task..."
+        className={styles.inputField}
       />
-      <button onClick={addTodo}>Add</button>
-      <ul>
+       <button className={styles.addTodoButton} onClick={addTodo}>Add</button>
+      </div>
+      <ul className={styles.ul}>
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li key={todo.id} className={styles.li}>
             {todo.text}
-            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+            <button className={styles.deleteButton} onClick={() => deleteTodo(todo.id)}>Delete</button>
           </li>
         ))}
       </ul>
