@@ -68,3 +68,17 @@
     display: flex;
     justify-content: space-between;
 }
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+/* .backLink:hover {
+    text-decoration: underline;
+} */

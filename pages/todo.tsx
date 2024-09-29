@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/TodoPage.module.css"
+import Link from "next/link";
 
 type Todo = {
   id: number;
@@ -25,6 +26,9 @@ const TodoPage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Todo's</h1>
+      <Link href="/" className={styles.backLink}>
+        Back
+      </Link>
       <div className={styles.inputContainer}>
       <input
         type="text"
