@@ -1,0 +1,29 @@
+.todoPageContainer {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.textContainer {
+  flex: 1;
+  max-width: 600px;
+  margin: 100px 20px 0 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-right: 150px;
+  padding-top: 50px;
+}
+
+.description {
+  margin: 50px 0 20px 0;
+  line-height: 1.5;
+}
+
+.image {
+  margin: 100px 0 0 100px;
+}
